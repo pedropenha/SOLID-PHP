@@ -2,7 +2,7 @@
 
 namespace Alura\Solid\Model;
 
-class Video
+class Video implements Pontuavel
 {
     /** @var bool */
     protected $assistido = false;
@@ -31,5 +31,11 @@ class Video
     public function recuperarUrl(): string
     {
         return 'http://videos.alura.com.br/' . http_build_query(['nome' => $this->nome]);
+    }
+
+    public function recuperaPontuacao(): int
+    {
+        // TODO: Implement recuperaPontuacao() method.
+        return $this->minutosDeDuracao() * 2;
     }
 }

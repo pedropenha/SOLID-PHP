@@ -14,9 +14,16 @@ class Feedback
             throw new \DomainException('Depoimento obrigatório');
         }
 
-
         $this->nota = $nota;
         $this->depoimento = $depoimento;
+    }
+
+    public function getNota(){
+        return $this->nota;
+    }
+
+    public function getDepoimento(){
+        return $this->depoimento;
     }
 
 }
