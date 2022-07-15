@@ -35,7 +35,6 @@ class Video implements Pontuavel
 
     public function recuperaPontuacao(): int
     {
-        // TODO: Implement recuperaPontuacao() method.
         return $this->minutosDeDuracao() * 2;
     }
 }

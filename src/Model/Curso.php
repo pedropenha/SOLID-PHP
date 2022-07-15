@@ -40,4 +40,11 @@ class Curso implements Pontuavel
         // TODO: Implement recuperaPontuacao() method.
         return 100;
     }
+
+    public function assistir(): void
+    {
+        foreach ($this->videos as $video){
+            $video->assistir();
+        }
+    }
 }
